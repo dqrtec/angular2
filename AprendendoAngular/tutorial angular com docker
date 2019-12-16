@@ -1,0 +1,11 @@
+# coloque o arquivo Dockerfile dentro de obec-front
+
+# dentro de obec-front execute (mesmo diretorio que o Dockerfile) e execute:
+docker build -t angular-docker-image .
+
+#verifique se existe uma imagem com o nome "angular-docker-image" utilizando o comando:
+docker image ls
+
+#Executar:
+sudo docker run -it -p 4200:4200 angular-docker-image
+	# ta rodando em http://localhost:4200/

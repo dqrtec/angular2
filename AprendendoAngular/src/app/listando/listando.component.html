@@ -1,0 +1,25 @@
+<p> <input type="" name="" value="{{meuNome}}"> meu nome é {{meuNome}}</p>
+
+
+
+	<select #variaveLocal (change)="0">
+		<option value="v1">Valor 1</option>
+		<option value="v2">Valor 2</option>
+		<option value="v3">Valor 3</option>
+		<option value="v4">Valor 4</option>
+	</select>
+	<p [class.v1]=" variaveLocal.value == 'v1' ">Mudando classe</p>
+	<p class=" {{variaveLocal.value}} ">Mudando classe</p>
+
+
+
+<ul>
+	<p>ngFor</p>
+	<li *ngFor="let curso of listaCursos">
+		{{curso}}
+	</li>
+
+	<p>BIND propriedade</p>
+	<img src="{{ url }}">
+	<img [src]="url">
+</ul>
