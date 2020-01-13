@@ -1,0 +1,12 @@
+<div class="container">
+
+    <div class="container">
+        <button class="btn btn-primary"> Refresh </button>
+        <button class="btn btn-success"> Save All Modifications </button>
+    </div>
+
+    <div class="card" *ngFor="let estado of listaStatus">
+        <app-status [dado]="estado" class="card-body" ></app-status>
+    </div>
+</div>
+<!-- list-group  list-group-item -->
