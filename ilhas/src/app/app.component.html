@@ -1,0 +1,8 @@
+<div class="mapa">
+  <div *ngFor="let linha of mapa">
+    <div *ngFor="let c of linha" style="display:inline-block">
+      <app-imagem [Valor]="c.Valor" ></app-imagem>
+    </div>
+    <br>
+  </div>
+</div>
